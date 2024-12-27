@@ -16,11 +16,6 @@ userSelection.forEach((brush) =>{
         const numSquares = gridDimension*gridDimension;
         createGridItems();
 
-        const reset = document.querySelector('button');
-        reset.addEventListener('click', ()=> {
-            container.innerHTML = "";
-        });
-
         function createGridItems() {
             for (let i = 0; i < numSquares; i++) {
                 const gridItem = document.createElement('div');
@@ -31,5 +26,10 @@ userSelection.forEach((brush) =>{
             };
         };
     })
+});
+
+const reset = document.querySelector('button');
+reset.addEventListener('click', ()=> {
+    container.innerHTML = "";
 });
 
