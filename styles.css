@@ -42,8 +42,6 @@ section {
 }
 
 .grid-item {
-    width: 25px;
-    height: 25px;
     background-color: rgba(246, 246, 246, 1);
     border: 1px solid rgba(207, 207, 207, 1);
     box-sizing: border-box;
