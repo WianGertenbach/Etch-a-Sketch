@@ -2,11 +2,14 @@ const container = document.querySelector('.grid-container');
 
 const containerSize = 400;
 
-let userInput = prompt("Enter the size of the grid: ");
-let gridDimension = Number(userInput);
+const userSelection = document.querySelector('.b4');
 
-const squareDimensions = containerSize/gridDimension;
-const squareDimensionsString = squareDimensions+"px"
+const rect = userSelection.getBoundingClientRect();
+
+const squareDimensions = rect.width;
+const squareDimensionsString = squareDimensions+"px";
+
+let gridDimension = containerSize/squareDimensions;
 const numSquares = gridDimension*gridDimension;
 
 function createGridItems() {
