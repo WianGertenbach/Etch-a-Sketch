@@ -22,7 +22,13 @@ userSelection.forEach((brush) =>{
             container.appendChild(gridItem);
 
             gridItem.addEventListener('mouseenter', ()=>{
-                gridItem.style.backgroundColor = "rgba(95, 105, 131, 1)";
+                let rgb1 = Math.ceil(Math.random()*256);
+                let rgb2 = Math.ceil(Math.random()*256);
+                let rgb3 = Math.ceil(Math.random()*256);
+
+                const bgColor = "rgb("+rgb1+","+rgb2+","+rgb3+")";
+
+                gridItem.style.backgroundColor = bgColor;
             })
         };
 
